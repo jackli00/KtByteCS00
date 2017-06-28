@@ -22,16 +22,7 @@
  *
  ******************************************************************************/
 
-        import java.awt.BasicStroke;
-        import java.awt.Color;
-        import java.awt.FileDialog;
-        import java.awt.Font;
-        import java.awt.FontMetrics;
-        import java.awt.Graphics2D;
-        import java.awt.Image;
-        import java.awt.MediaTracker;
-        import java.awt.RenderingHints;
-        import java.awt.Toolkit;
+        import java.awt.*;
 
         import java.awt.event.ActionEvent;
         import java.awt.event.ActionListener;
@@ -62,13 +53,7 @@
         import java.util.NoSuchElementException;
         import javax.imageio.ImageIO;
 
-        import javax.swing.ImageIcon;
-        import javax.swing.JFrame;
-        import javax.swing.JLabel;
-        import javax.swing.JMenu;
-        import javax.swing.JMenuBar;
-        import javax.swing.JMenuItem;
-        import javax.swing.KeyStroke;
+        import javax.swing.*;
 
 /**
  *  The {@code StdDraw} class provides a basic capability for
@@ -621,7 +606,6 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
 
     // singleton pattern: client can't instantiate
     private StdDraw() { }
-
 
     // static initializer
     static {
@@ -1844,9 +1828,6 @@ public final class StdDraw implements ActionListener, MouseListener, MouseMotion
             keysDown.remove(e.getKeyCode());
         }
     }
-
-
-
 
     /**
      * Test client.
